@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SaifMahmud366/facebook-sponsored-post-blocker/main/patterns.schema.json",
+  "configVersion": 1,
+  "updatedAt": "2025-01-01T00:00:00Z",
+  "minScriptVersion": "7.0.0",
+  "notes": "Edit this file when Facebook changes its ad-disclosure URL or label. Users receive updates automatically without reinstalling the script.",
+
+  "adLinkPatterns": [
+    "/ads/about",
+    "/ad/preferences",
+    "/business/help",
+    "/ads/",
+    "/help/ads",
+    "/ad/",
+    "/privacy/ads"
+  ],
+
+  "adLabelTexts": [
+    "Ad",
+    "Sponsored",
+    "Gesponsert",
+    "Anzeige",
+    "Sponsorisé",
+    "Commandité",
+    "Patrocinado",
+    "Anuncio",
+    "Sponsorizzato",
+    "Sponsorizzata",
+    "প্রযোজিত",
+    "বিজ্ঞাপন",
+    "प्रायोजित",
+    "광고",
+    "広告",
+    "赞助",
+    "贊助"
+  ],
+
+  "geometry": {
+    "minWidth": 400,
+    "maxWidth": 900,
+    "minHeight": 150
+  },
+
+  "blockedPlaceholder": {
+    "enabled": false,
+    "text": "🚫 Sponsored post blocked",
+    "backgroundColor": "#1c1e21",
+    "textColor": "#8a8d91",
+    "fontSize": "13px",
+    "padding": "12px",
+    "borderRadius": "8px",
+    "margin": "8px 0"
+  },
+
+  "behavior": {
+    "debug": true,
+    "debounceMs": 150,
+    "hideReels": false,
+    "hideMarketplace": false,
+    "hideStories": false
+  }
+}
